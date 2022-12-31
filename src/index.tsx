@@ -1,8 +1,14 @@
 import React from 'react';
-import {Text} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import RootStack from './stacks/RootStack';
+import {Provider} from 'react-native-paper';
 
-function App() {
-  return <Text>App</Text>;
+export default function App() {
+  return (
+    <Provider>
+      <NavigationContainer>
+        <RootStack />
+      </NavigationContainer>
+    </Provider>
+  );
 }
-
-export default App;
