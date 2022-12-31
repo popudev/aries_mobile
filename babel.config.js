@@ -14,6 +14,7 @@ module.exports = {
           '@stacks': './src/stacks',
           '@types': './src/types',
           '@components': './src/components',
+          '@aries': './src/aries',
         },
       },
     ],

@@ -4,12 +4,22 @@ import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
 import com.facebook.react.ReactRootView;
 import android.os.Bundle;
+import android.system.ErrnoException;
+import android.system.Os;
+import java.io.File;
 
 public class MainActivity extends ReactActivity {
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
-    super.onCreate(null);
+    super.onCreate(savedInstanceState);
+
+    try {
+      Os.setenv("EXTERNAL_STORAGE", getExternalFilesDir(null).getAbsolutePath(), true);
+      System.loadLibrary("indy");
+    } catch (ErrnoException e) {
+      e.printStackTrace();
+    }
   }
 
   /**
