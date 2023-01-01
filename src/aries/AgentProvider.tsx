@@ -31,7 +31,8 @@ export default function AgentProvider({children}: any) {
       autoAcceptConnections: true,
       autoAcceptCredentials: AutoAcceptCredential.ContentApproved,
       autoAcceptProofs: AutoAcceptProof.ContentApproved,
-      // mediatorConnectionsInvite:
+      mediatorConnectionsInvite:
+        'ws://mediation.popu.online/?c_i=eyJAdHlwZSI6ICJkaWQ6c292OkJ6Q2JzTlloTXJqSGlxWkRUVUFTSGc7c3BlYy9jb25uZWN0aW9ucy8xLjAvaW52aXRhdGlvbiIsICJAaWQiOiAiNWM3YzEyYzYtMDMzMy00MWE0LTg2NGUtNzQ5MzMwNDczZjM5IiwgInNlcnZpY2VFbmRwb2ludCI6ICJ3czovL21lZGlhdGlvbi5wb3B1Lm9ubGluZS8iLCAibGFiZWwiOiAiTWVkaWF0aW9uIiwgInJlY2lwaWVudEtleXMiOiBbIjl4RDR4Zzhwa3FrUzVoNnBCQjdUdkZXS3lpQ3lySG1ENGFYTWROZkpETlFmIl19',
     };
 
     return config;
