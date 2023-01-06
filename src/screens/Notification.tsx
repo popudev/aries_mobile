@@ -40,7 +40,7 @@ export default function Notification({route}: Props) {
         <NotificationItem type="cre" id="1" onPress={handleAcceptCredentialOffer} /> */}
       </ScrollView>
       <TouchableOpacity>
-        <Button icon="qrcode" mode="contained" onPress={handleScanQR}>
+        <Button icon="qrcode-scan" mode="contained" onPress={handleScanQR}>
           Scan QR Code
         </Button>
       </TouchableOpacity>

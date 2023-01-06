@@ -16,14 +16,14 @@ export default function AgentProvider({children}: any) {
 
   const initConfig = (genesis: string) => {
     const config: InitConfig = {
-      label: 'aries-mobile-1',
+      label: 'aries-mobile-12352',
       walletConfig: {
-        id: 'aries-wallet-1',
+        id: 'aries-wallet-12352',
         key: 'secret00000000000000000000001',
       },
       indyLedgers: [
         {
-          id: 'schat-ledger-643',
+          id: 'schat-ledger-644352',
           isProduction: false,
           genesisTransactions: genesis,
         },
@@ -32,7 +32,8 @@ export default function AgentProvider({children}: any) {
       autoAcceptCredentials: AutoAcceptCredential.ContentApproved,
       autoAcceptProofs: AutoAcceptProof.ContentApproved,
       mediatorConnectionsInvite:
-        'ws://mediation.popu.online/?c_i=eyJAdHlwZSI6ICJkaWQ6c292OkJ6Q2JzTlloTXJqSGlxWkRUVUFTSGc7c3BlYy9jb25uZWN0aW9ucy8xLjAvaW52aXRhdGlvbiIsICJAaWQiOiAiNWM3YzEyYzYtMDMzMy00MWE0LTg2NGUtNzQ5MzMwNDczZjM5IiwgInNlcnZpY2VFbmRwb2ludCI6ICJ3czovL21lZGlhdGlvbi5wb3B1Lm9ubGluZS8iLCAibGFiZWwiOiAiTWVkaWF0aW9uIiwgInJlY2lwaWVudEtleXMiOiBbIjl4RDR4Zzhwa3FrUzVoNnBCQjdUdkZXS3lpQ3lySG1ENGFYTWROZkpETlFmIl19',
+        'ws://mediation.popu.online?c_i=eyJAdHlwZSI6ICJkaWQ6c292OkJ6Q2JzTlloTXJqSGlxWkRUVUFTSGc7c3BlYy9jb25uZWN0aW9ucy8xLjAvaW52aXRhdGlvbiIsICJAaWQiOiAiNTg5N2YxMDItYzlmZS00NjM4LThhMzgtMjBmZDYxNjM0MWZlIiwgImxhYmVsIjogIk1lZGlhdGlvbiIsICJyZWNpcGllbnRLZXlzIjogWyI5Mnk4djFlV1JXUUxNNkVSelJHR1hxZFluU3RFUkRoMnlNcEphYnJVaHpzciJdLCAic2VydmljZUVuZHBvaW50IjogIndzOi8vbWVkaWF0aW9uLnBvcHUub25saW5lIn0=',
+      mediatorPollingInterval: 10000,
     };
 
     return config;

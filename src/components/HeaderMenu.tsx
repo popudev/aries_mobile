@@ -4,6 +4,7 @@ import {Menu, IconButton} from 'react-native-paper';
 import {useNavigation} from '@react-navigation/native';
 import {StyleSheet} from 'react-native';
 import {Screens, Stacks} from '@types';
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
 
 export default function HeaderMenu() {
   const navigation = useNavigation();
@@ -21,7 +22,7 @@ export default function HeaderMenu() {
       visible={visible}
       onDismiss={closeMenu}
       anchor={<IconButton icon="dots-vertical" onPress={openMenu} />}>
-      <Menu.Item style={styles.menuItem} title="Login" onPress={handleLogin} />
+      <Menu.Item leadingIcon="import" style={styles.menuItem} title="Sign In" onPress={handleLogin} />
     </Menu>
   );
 }
